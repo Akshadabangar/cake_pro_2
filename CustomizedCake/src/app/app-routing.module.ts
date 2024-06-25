@@ -5,6 +5,7 @@ import { VendorsComponent } from './vendors/vendors.component';
 const routes: Routes = [
 
   {path:'vendors',component:VendorsComponent}
+  
 ];
 
 @NgModule({
