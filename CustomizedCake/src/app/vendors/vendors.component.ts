@@ -10,7 +10,7 @@ export class VendorsComponent implements OnInit{
 
   vendors: any;
   selectedlocation: any = 'pune'; 
-
+ 
   constructor(private vendorservService: VendorservService) {}
 
   ngOnInit() {
