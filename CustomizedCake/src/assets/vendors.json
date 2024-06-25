@@ -1,0 +1,69 @@
+{
+    
+
+    "pune":[
+        {
+            "id":1,
+            "Name":"Akshada Bangar",
+            "Address":"Deccan Gymkhana,Pune",
+            "img":"/assets/v1.jpg"
+        },
+
+        {
+            "id":2,
+            "Name":"Sonali Rakshe",
+            "Address":"Kondhwa Budruk,Pune",
+            "img":"/assets/v2.jpg"
+        },
+
+        {
+            "id":3,
+            "Name":"Sahil Mundhe",
+            "Address":"Kothrud,Pune",
+            "img":"/assets/v3.jpg"
+        }
+    ],
+
+
+    "Mumbai":[
+        {
+            "id":4,
+            "Name":"Bhavana Deshmukh",
+            "Address":"Ghatkopar west,Mumbai"
+        },
+
+        {
+            "id":5,
+            "Name":"Sakshi Pokharkar",
+            "Address":"Mulund East,Mumbai"
+        },
+
+        {
+            "id":6,
+            "Name":"vidya Morde",
+            "Address":"Navagar Road Mulund East,Mumbai"
+        }
+    ],
+
+    "Nashik":[
+        {
+            "id":7,
+            "Name":"Om Jadhv",
+            "Address":"Shramik Nagar,Nashik"
+        },
+
+        {
+            "id":8,
+            "Name":"Kajal wable",
+            "Address":"Shramik Nagar,Nashik"
+        },
+
+        {
+            "id":9,
+            "Name":"Heena Mandal",
+            "Address":"Pakhal Road-wadala,Nashik"
+        }
+    ]
+    
+
+}
