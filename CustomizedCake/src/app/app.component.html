@@ -1,4 +1,4 @@
-<div style="margin-top: 50px;">
+<div style="margin-top: 30px;">
 
   <!--<div style="text-align: center;">
   <button routerLink="/vendors">Pune</button>
@@ -27,7 +27,9 @@
 
 
 <div style="text-align: center;">
+  <div class="container">
 <div *ngFor="let desh of databasename.location">
   <button (click)="mymethod(desh.city)" > {{ desh.city }}</button>
+</div>
 </div>
 </div>
