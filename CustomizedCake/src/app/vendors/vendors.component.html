@@ -1,17 +1,17 @@
-<!-- 
- <div>
+
+ <!-- <div>
     <select [(ngModel)]="selectedlocation">
       <option *ngFor="let location of vendors | keyvalue" [value]="location.key">
         {{ location.key }}
       </option>
     </select>
   </div> 
-   -->
+    -->
 
   <!-- <div *ngIf="selectedlocation"> -->
 
 
-    <h2>{{ selectedlocation }}</h2>
+   
     <div class="row">
         <div  class="col-sm-4" *ngFor="let vendor of vendors[selectedlocation]">
           <img class="shadow-image" *ngIf="vendor.img" [src]="vendor.img" alt="{{ vendor.Name }}" height="200" width="200">

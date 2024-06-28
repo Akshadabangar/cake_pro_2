@@ -1,6 +1,5 @@
 {
-    
-
+   
     "pune":[
         {
             "id":1,
@@ -49,7 +48,8 @@
         {
             "id":7,
             "Name":"Om Jadhv",
-            "Address":"Shramik Nagar,Nashik"
+            "Address":"Shramik Nagar,Nashik",
+            "img":"/assets/v4.jpg"
         },
 
         {
