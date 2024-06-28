@@ -9,8 +9,10 @@ import { VendorservService } from '../service/vendorserv.service';
 export class VendorsComponent implements OnInit{
 
   vendors: any;
-  selectedlocation: any = 'pune'; 
- 
+  selectedlocation:string= "pune"; 
+  
+  
+
   constructor(private vendorservService: VendorservService) {}
 
   ngOnInit() {
@@ -24,4 +26,6 @@ export class VendorsComponent implements OnInit{
     );
   }
 
+
+  
 }

@@ -8,7 +8,9 @@ import { Observable } from 'rxjs';
 })
 export class VendorservService {
 
+
   private vendorsurl='/assets/vendors.json';
+  private locationurl='/assets/location.json';
 
   constructor(private http:HttpClient) { }
 
@@ -16,6 +18,11 @@ export class VendorservService {
     return this.http.get<any>(this.vendorsurl);
   }
 
+
+  getLocation():Observable<any>{
+   
+    return this.http.get<any>(this.locationurl);
+  }
 
 
 }
