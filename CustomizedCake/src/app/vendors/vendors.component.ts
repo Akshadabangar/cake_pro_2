@@ -9,7 +9,8 @@ import { VendorservService } from '../service/vendorserv.service';
 export class VendorsComponent implements OnInit{
 
   vendors: any;
-  selectedLocation: any; 
+  selectedlocation:any; 
+  varr:any;
   
   
   constructor(private vendorservService: VendorservService) {}
@@ -23,6 +24,9 @@ export class VendorsComponent implements OnInit{
         console.error('Error fetching vendors', error);
       }
     );
+
+     this.varr=this.vendorservService.store;
+     console.log(this.varr+"hellosdf")
   }
 
 

@@ -1,7 +1,6 @@
 import { Component ,OnInit} from '@angular/core';
 import { VendorservService } from './service/vendorserv.service';
-import { HttpClient } from '@angular/common/http';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,10 +11,11 @@ export class AppComponent implements OnInit{
 
   title = 'CustomizedCake';
 
-  databasename: any; 
-vendors:any[]=[];
+  databasename: any;
+  vendors:any[]=[];
+  
 
-  constructor(private vendorservService: VendorservService, private http: HttpClient) {}
+  constructor(private vendorservService: VendorservService,private router:Router) {}
 
   ngOnInit(): void {
     this.vendorservService.getLocation().subscribe(
@@ -26,24 +26,26 @@ vendors:any[]=[];
     );
   }
 
-  mymethod(city: string): void {
+  //BUTTON CLICK
+ mymethod(city:string):void {
     this.vendorservService.getVendors().subscribe(
-      (data) => {
-        const vendors = data[city]; 
-        if (vendors) {
-          console.log(`Vendors in ${city}:`, vendors);
-          this.vendors = vendors;
+      (data)=>{
+       const vendors=data[city];
+       console.log(`vendors in ${city}:`,vendors);
+        this.vendors=vendors;
 
-        } else {
-          console.error(`No vendors found for ${city}.`);
-          this.vendors = [];
-        }
-      },
-      
+      this.useMethod1(city);
+      }
     );
-  }
+    
+    }
 
-  
+    useMethod1(city:string): void {
+      this.vendorservService.method1(city);
+      
+      this.router.navigate(['/vendors']);
 
-  
+    }
+   
+
 }

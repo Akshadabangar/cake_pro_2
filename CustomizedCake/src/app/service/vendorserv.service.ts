@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-
 @Injectable({
   providedIn: 'root'
 })
 export class VendorservService {
 
+ store:any;
 
   private vendorsurl='/assets/vendors.json';
   private locationurl='/assets/location.json';
@@ -24,5 +24,12 @@ export class VendorservService {
     return this.http.get<any>(this.locationurl);
   }
 
+
+  method1(info:string):void
+   {
+    this.store=info;
+    console.log("method 1 is called j",this.store);
+  
+   }
 
 }
