@@ -1,7 +1,6 @@
+<div style="margin-top: 30px;">
 
-    <div style="margin-top: 50px;">
-
-  <div style="text-align: center;">
+  <!--<div style="text-align: center;">
   <button routerLink="/vendors">Pune</button>
   <span style="margin-right: 30px;"></span> 
   
@@ -23,5 +22,21 @@
 
   </div>
   </div>
-  </div>
-  
+  </div>  -->
+
+
+
+<div style="text-align: center;">
+  <div class="container">
+<div *ngFor="let desh of databasename.location">
+  <button (click)="mymethod(desh.city)" routerLink="/vendors" > {{ desh.city }}</button>
+
+</div>
+</div>
+<router-outlet></router-outlet>
+</div> 
+
+
+
+
+
