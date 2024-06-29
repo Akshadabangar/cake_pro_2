@@ -9,10 +9,10 @@ import { VendorservService } from '../service/vendorserv.service';
 export class VendorsComponent implements OnInit{
 
   vendors: any;
-  selectedlocation:string= "pune"; 
+  selectedlocation:any; 
+  varr:any;
   
   
-
   constructor(private vendorservService: VendorservService) {}
 
   ngOnInit() {
@@ -24,6 +24,9 @@ export class VendorsComponent implements OnInit{
         console.error('Error fetching vendors', error);
       }
     );
+
+     this.varr=this.vendorservService.store;
+     console.log(this.varr+"hellosdf")
   }
 
 
