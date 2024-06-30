@@ -43,8 +43,7 @@ export class AppComponent implements OnInit{
 
     useMethod(city:string): void {
       this.vendorservService.method1(city);
-
-      this.router.navigate(['/vendors']);  //routing
+      this.router.navigate(['/vendors']);
 
     }
    

@@ -14,7 +14,7 @@ export class VendorsComponent implements OnInit{
   varr:any;
   // value:boolean=false;
   
-  constructor(private vendorservService: VendorservService,private router:Router) {}
+  constructor(private vendorservService: VendorservService, private router:Router) {}
   
   ngOnInit() {
     this.vendorservService.getVendors().subscribe(

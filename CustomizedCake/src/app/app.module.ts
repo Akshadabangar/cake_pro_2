@@ -14,6 +14,7 @@ import { CakeComponent } from './components/cake/cake.component';
     VendorsComponent,
     CakeComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
