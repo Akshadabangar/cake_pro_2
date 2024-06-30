@@ -1,0 +1,6 @@
+<div>{{varr1}}</div>
+<div *ngFor="let cake of vendors.cakeinfo">
+    <img class="shadow-image" img *ngIf="cake.img1" [src]="cake.img1" height="200" width="200">
+    <p> Flavour: {{ cake.flavour }}</p>
+    <p>Price: {{ cake.price}}</p>
+  </div>

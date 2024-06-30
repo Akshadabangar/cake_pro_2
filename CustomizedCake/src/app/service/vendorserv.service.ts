@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 export class VendorservService {
 
  store:any;
+ storecake:any;
 
   private vendorsurl='/assets/vendors.json';
   private locationurl='/assets/location.json';
@@ -28,8 +29,13 @@ export class VendorservService {
   method1(info:string):void
    {
     this.store=info;
-    console.log("method 1 is called j",this.store);
+    console.log("method 1 is called ",this.store);
   
+   }
+
+   methodcake(info1:string):void
+   {
+    this.storecake=info1;
    }
 
 }

@@ -1,6 +1,7 @@
 import { Component ,OnInit} from '@angular/core';
 import { VendorservService } from './service/vendorserv.service';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -34,15 +35,16 @@ export class AppComponent implements OnInit{
        console.log(`vendors in ${city}:`,vendors);
         this.vendors=vendors;
 
-      this.useMethod1(city);
+        this.useMethod(city);
       }
     );
     
     }
 
-    useMethod1(city:string): void {
+    useMethod(city:string): void {
       this.vendorservService.method1(city);
-      this.router.navigate(['/vendors']);
+
+      this.router.navigate(['/vendors']);  //routing
 
     }
    
